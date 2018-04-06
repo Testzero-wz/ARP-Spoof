@@ -256,8 +256,8 @@ while 1:
     elif choose == 3:
 
         print "[*] ARP packet type"
-        print "1. ARP request "
-        print "2. ARP reply "
+        print " 1. ARP request "
+        print " 2. ARP reply "
 
         ARPtype = ''
 
