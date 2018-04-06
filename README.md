@@ -1,57 +1,40 @@
 ---
-date: 2018-03-16 15:52
+date: 2018-04-06 17:51
 status: public
-title: README
+title: ARP
 ---
 
-# Tk-for-CQU-Course
-An simple,humble GUI program for CQU, base on Python Tkinter
+# ARP-Spoof
+A simple ARP spoof program base on python socket
 
+![](https://github.com/WananpIG/ARP-Spoof/blob/master/_img/17-54-35.jpg)
 # Usage
- Input your student ID number & password into the entry, select what kind of courses you want(Defult is major course) and click ** Login Button **
+1. Choose a interface first
+2. Follow the program and you'll get a functions list
+  
 
-![](~/15-55-25.jpg)
+![](https://github.com/WananpIG/ARP-Spoof/blob/master/_img/17-57-11.jpg)
+Including
++ ARP Scan
++ ARP Spoof
++ Send a custom ARP packet
++ Exit
 
-+ If you got an error when you Login, make sure your what you input are both correct and try again.
-+ If the program no responese after you click **Login Button**, perhaps  our CQU teaching administration system were busy, plz wait a moment.
+3\. You can choose one of them
 
-If your ID & password are correct, the seceond window will show up
-(Like this)
+![](https://github.com/WananpIG/ARP-Spoof/blob/master/_img/17-59-19.jpg)
 
-![](~/15-57-30.jpg)
-Left box is about lesson list while right side box will contain the course detailed information you choose on the left side.
+![](https://github.com/WananpIG/ARP-Spoof/blob/master/_img/18-00-09.jpg)
+4\. When ARP spoof was succeed, you can attack with driftnet or other tools.
 
-When you double click on the item which is no about course(Like first, second item), it will be a notice on the right window  
+![](https://github.com/WananpIG/ARP-Spoof/blob/master/_img/18-11-23.jpg)
+(When you want to MITM attack, you should open ipforward first)
+``` bash
+sudo echo 1 >/proc/sys/net/ipv4/ip_forward
+```
+5\. You can also send a bunch of custom ARP packets.
 
-![](~/16-15-50.jpg)
+![](https://github.com/WananpIG/ARP-Spoof/blob/master/_img/18-17-59.jpg)
 
-Of course, there are some notes when the crawler thread didn't get info from servers .
-
-![](~/16-59-02.jpg)
-
-
-You can select an item on the right side and it will be selected into **selected widget** which on the bottom of window
-
-![](~/16-36-45.jpg)
-
-At most,   only three courses can be selected and you can click the **Clear Button** remove all you selected.
-The refresh button offer a function which you can refresh  the course info by hand, but  I **highly recommend**  not using this feature when it is not necessary, it may cause a servere network congestion which is not good for you and other students .
-
-Finally, click the **Submit Button** and the courses you selected will send to the server,  then it will automatically refresh once , you needn't refresh again .
-
-![](~/17-09-07.jpg)
-
-
-## Tips
-**There are no some alert or notice message when your  requests are successfully handled by servers or not .
-The only thing you can do is to wait for the message box on the left to update.
-Ahahahahah**
-
-
-
-
-
-
-
-
+That's it : )
 
